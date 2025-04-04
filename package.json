@@ -13,13 +13,24 @@
     "@aps_sdk/authentication": "^1.0.0",
     "@aps_sdk/model-derivative": "^1.1.0",
     "@aps_sdk/oss": "^1.1.1",
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "express-formidable": "^1.2.0"
+    "express-formidable": "^1.2.0",
+    "jwt-simple": "^0.5.6"
   },
   "devDependencies": {
     "@types/forge-viewer": "^7.48.0"
   },
   "main": "config.js",
-  "author": ""
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo3101222/autodesk2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leo3101222/autodesk2/issues"
+  },
+  "homepage": "https://github.com/leo3101222/autodesk2#readme"
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizador Autodesk</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Máscara que cobre e BLOQUEIA interação no topo */
+    .iframe-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px; /* ajuste conforme a altura da barra do Viewer */
+      background-color: #f0f0f0;
+      z-index: 10;
+      pointer-events: auto; /* Agora ela bloqueia o clique */
+      cursor: default; /* opcional: mostra que não é clicável */
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <div class="iframe-mask"></div>
+    <iframe src="http://localhost:8080/page2.html#dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6MWNld3J5YWZlMWdvdHR6dnN2YXlkNmxyYW5zMHpuenZxaHFrcWttdzFnZ2g2Ym9kLWJhc2ljLWFwcC8lRDAlOUMlRDAlQjUlRDAlQkIlRDElOEMlRDAlQkQlRDAlQjglRDElODYlRDAlQjAuU1RFUA"></iframe>
+  </div>
+</body>
+</html>
